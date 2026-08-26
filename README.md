@@ -13,10 +13,11 @@ Este proyecto fue desarrollado como parte de mi formación académica y **no est
 ### Funcionalidades implementadas
 - Funcionamiento de los botones para poder hacer cambios entre pestañas.
 - Agregar al carrito y el carrito
-- Base de datos provisional. 
+   
 ### Limitaciones conocidas
 - Algunos módulos del proyecto original no están incluidos en este repositorio (archivos no recuperables)
 - El método de pago no esta funcional.
+- No tiene conexión a una base de datos todo es de manera local.
 
 ## Tecnologías utilizadas
 
