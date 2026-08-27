@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Confirmar pago - Laura´s Boutique</title>
+	<link rel="stylesheet" href="css/estilospag.css" />
+	<link rel="stylesheet" href="css/estiloscarr.css" />
+</head>
+<body>
+	<div class="opps">
+		<div class="opps-header">
+			<div class="opps-reminder">Ficha digital. No es necesario imprimir.</div>
+			<div class="opps-info">
+				<div class="opps-brand"><img src="img/oxxopay_brand.png" alt="OXXOPay"></div>
+				<div class="opps-ammount">
+					<h3>Monto a pagar</h3>
+					<h3 id="pagar-total">$0.00</h3>
+
+					<ul id="pagar-resumen" class="resumen-pedido"></ul>
+					<p id="pagar-vacio" style="display:none;">
+						Tu carrito está vacío. <a href="index.html">Ir a comprar</a>.
+					</p>
+
+					<p>OXXO cobrará una comisión adicional al momento de realizar el pago.</p>
+				</div>
+			</div>
+			<div class="opps-reference">
+				<h3>Referencia</h3>
+				<h1 id="pagar-referencia">---------</h1>
+			</div>
+		</div>
+		<div class="opps-instructions">
+			<h3>Instrucciones</h3>
+			<ol>
+				<li>Acude a la tienda OXXO más cercana. <a href="https://www.google.com.mx/maps/search/oxxo/" target="_blank">Encuéntrala aquí</a>.</li>
+				<li>Indica en caja que quieres realizar un pago de servicio<strong></strong>.</li>
+				<li>Dicta al cajero el número de referencia en esta ficha para que tecleé directamete en la pantalla de venta.</li>
+				<li>Realiza el pago correspondiente con dinero en efectivo.</li>
+				<li>Al confirmar tu pago, el cajero te entregará un comprobante impreso. <strong>En el podrás verificar que se haya realizado correctamente.</strong> Conserva este comprobante de pago.</li>
+			</ol>
+			<div class="opps-footnote">Al completar estos pasos recibirás un correo de <strong>Laura´s Boutique</strong> confirmando tu pago.</div>
+
+			<button type="button" id="btn-confirmar-pedido" class="btn-confirmar">Confirmar pedido</button>
+			<p id="pagar-confirmado" style="display:none;">
+				¡Gracias! Tu pedido fue registrado con la referencia <strong id="pagar-referencia-confirmada"></strong>.
+			</p>
+		</div>
+	</div>
+
+	<script src="js/cart.js"></script>
+	<script type="module" src="js/firebase-init.js"></script>
+	<script src="js/order.js"></script>
+</body>
+</html>
